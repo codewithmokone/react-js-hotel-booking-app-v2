@@ -1,29 +1,61 @@
-import React from 'react';
-import hero_image from '../assets/hero-image.jpg';
-import { Link } from 'react-router-dom';
+import React from "react";
+import hero_image from "../assets/hero-image.jpg";
+import { Link } from "react-router-dom";
+import NavBar from "../components/NavBar";
+
+import SearchFilter from "../components/SearchFilter";
 
 const Home = () => {
   return (
-    <div className='bg-red-500 m-auto'>
-        {/* logo and nav links */}
-        <div className='w-4/5 flex items-center justify-between absolute top-0 right-0 mt-4 shadow-lg left-0 m-auto bg-white h-14 rounded-[25px]'>
-            <span className='font-bold text-medium-2xl ml-10'>Hotel</span>
-            <nav className='mr-10'>
-                <ul className='flex gap-10 items-center font-medium text-gray-500  '>
-                    <li className='font-medium'><Link to={"/"}>Home</Link></li>
-                    <li><Link to={"/gallery"}>Gallery</Link></li>
-                    <li><Link to={"/Rooms"}>Rooms</Link></li>
-                    <li><Link to={"/Contact"}>Contact</Link></li>
-                    <li className='bg-blue-500 w-20 h-8 flex items-center justify-center rounded-[25px] text-white'><Link to={"/Login"}>Login</Link></li>
-                </ul>
-            </nav>
+    <div className="items-center h-min">
+      {/* navbar */}
+      <div>
+        <NavBar />
+      </div>
+      {/* hero section */}
+      <div className="w-full h-[95vh]">
+        <img className="hero-image" src={hero_image} alt="hero-image" />
+      </div>
+      {/* Search filter */}
+      <div>
+        <SearchFilter />
+      </div>
+      {/*  */}
+      <div className="w-[80%] m-auto bg-white h-min  my-10">
+        <div className="flex items-center justify-between h-10 mt-24">
+          <h2 className="text-2xl font-bold">
+            Rooms we recommend for our customers
+          </h2>
+          <button className="border border-black rounded-[30px] w-[140px] h-[40px]">
+            View All Rooms
+          </button>
         </div>
-        {/* hero section */}
-        <div className='w-full'>
-            <img className='hero-image' src={hero_image} alt="" />
+        <div className="flex items-center justify-between mt-14">
+            <div className="w-[220px] h-[200px] bg-red-500"></div>
+            <div className="w-[220px] h-[200px] bg-red-500"></div>
+            <div className="w-[220px] h-[200px] bg-red-500"></div>
+            <div className="w-[220px] h-[200px] bg-red-500"></div>
         </div>
-    </div>
-  )
-}
+      </div>
+      <div>
 
-export default Home
+      </div>
+      {/* footer section */}
+      <div className="h-[300px] bg-black items-center text-gray-500">
+        <div></div>
+        <hr className="w-4/5 bg-gray-500 m-auto h-[2px]" />
+        <div className="w-4/5 m-auto">
+            <div>
+                <p className="text-gray-500">@2024 Hotel. All rights reserved</p>
+            </div>
+            <div className="flex gap-4">
+                <a href="">Terms & Conditions</a>
+                <a href="">Privacy Policy</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Home;

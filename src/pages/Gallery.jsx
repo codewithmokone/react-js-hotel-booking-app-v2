@@ -1,8 +1,14 @@
 import React from 'react'
+import NavBar from '../components/NavBar'
 
 const Gallery = () => {
   return (
-    <div>Gallery</div>
+    <div>
+      {/* Navbar */}
+      <div>
+        <NavBar />
+      </div>
+    </div>
   )
 }
 
