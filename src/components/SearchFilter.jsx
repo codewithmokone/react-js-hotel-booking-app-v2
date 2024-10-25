@@ -5,7 +5,7 @@ import search_icon from '../assets/icons/search-svgrepo-com.png';
 
 const SearchFilter = () => {
   return (
-    <div className="w-4/5  flex justify-around items-center gap-0 bg-white lg:h-14 xl:h-[80px] absolute left-0 right-0 lg:top-[580px] xl:top-[865px] bottom-50 rounded-[35px] xl:rounded-[40px] shadow-lg m-auto">
+    <div className="w-4/5 xl:w-3/5  flex justify-around items-center gap-0 bg-white lg:h-14 xl:h-[80px] absolute left-0 right-0 lg:top-[580px] xl:top-[865px] bottom-50 rounded-[35px] xl:rounded-[40px] shadow-lg m-auto">
       <div className="w-[20%] h-full flex items-center justify-center gap-6 ">
         <img className="w-[22px]" src={calendar_icon} />
         <p>Check in</p>

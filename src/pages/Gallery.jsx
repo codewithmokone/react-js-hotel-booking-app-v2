@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 
 const Gallery = () => {
   return (
@@ -7,6 +8,10 @@ const Gallery = () => {
       {/* Navbar */}
       <div>
         <NavBar />
+      </div>
+      {/* Footer */}
+      <div>
+        <Footer />
       </div>
     </div>
   )

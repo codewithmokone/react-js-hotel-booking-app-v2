@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import Rooms from './pages/Rooms';
 import Contact from './pages/Contact'
+import Policy from './pages/Policy';
+import TermsConditions from './pages/TermsConditions';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact />,
+  },
+  {
+    path: "/policy",
+    element: <Policy />,
+  },
+  {
+    path: "/terms",
+    element: <TermsConditions />,
   },
   
 ]);
