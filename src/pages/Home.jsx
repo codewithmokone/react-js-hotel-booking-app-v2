@@ -75,9 +75,6 @@ const Home = () => {
       <div className="w-[80%] xl:w-3/5 m-auto bg-white h-min  my-10">
         <div className="flex items-center justify-between h-10 mt-24">
           <h2 className="text-2xl font-bold">Stay at our unique rooms</h2>
-          {/* <Link to="/rooms" className="flex items-center justify-center border border-black rounded-[30px] w-[130px] h-[38px]">
-           <p className="text-sm">View All Rooms</p> 
-          </Link> */}
         </div>
         <div className="flex items-center justify-between mt-8">
           <div className="w-[31.3%] h-[200px] bg-[#BFBFBF] rounded-[10px]">

@@ -1,6 +1,7 @@
 import React from 'react'
 import room_1 from '../assets/pexels-pixabay-262048.jpg'
 import { rooms } from '../assets/content'
+import { Link } from 'react-router-dom';
 
 
 const Card = ({room,page,index}) => {
@@ -37,7 +38,7 @@ const Card = ({room,page,index}) => {
                         <p className="text-[12px] ml-4 mt-2 w-[400px]">{room.room_detail}</p>
                     </div>
                     <div className=" w-[15%] flex flex-col gap-4 justify-start items-center">
-                        <button className="bg-blue-500 font-medium text-white w-[100px] mt-4 h-[30px] rounded-[4px]">Show room</button>
+                        <Link to="/viewroom" className="bg-blue-500 font-medium text-white flex items-center justify-center w-[100px] mt-4 h-[30px] rounded-[4px]"><p>Show room</p></Link>
                         <p className='font-medium'>ZAR {room.room_price}</p>
                     </div>
                 </div>

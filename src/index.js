@@ -8,6 +8,8 @@ import Rooms from './pages/Rooms';
 import Contact from './pages/Contact'
 import Policy from './pages/Policy';
 import TermsConditions from './pages/TermsConditions';
+import ViewRoom from './pages/ViewRoom';
+import Login from './pages/Login';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
   {
     path: "/terms",
     element: <TermsConditions />,
+  },
+  {
+    path: "/viewroom",
+    element: <ViewRoom />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
   
 ]);
