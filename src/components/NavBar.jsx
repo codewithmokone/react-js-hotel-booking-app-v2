@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div className="w-4/5 xl:w-3/5 flex items-center justify-between absolute top-0 right-0 mt-4 shadow-lg left-0 m-auto bg-white h-14 rounded-[25px]">
+    <div className="w-4/5 xl:w-3/5 flex items-center justify-between absolute top-0 right-0 mt-4 shadow-lg left-0 m-auto bg-white h-14 rounded-[30px]">
       <span className="font-bold text-medium-2xl ml-10">Hotel</span>
-      <nav className="mr-10">
+      <nav className="mr-6">
         <ul className="flex gap-10 items-center font-medium text-gray-500  ">
           <li className="font-medium">
             <Link to={"/"}>Home</Link>
